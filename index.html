@@ -1,5 +1,6 @@
 <!DOCTYPE html>
   <head>
+    <meta charset="UTF-8">
     <!-- A-frame -> AR.jsの順番に読み込む -->
     <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
@@ -57,12 +58,20 @@
       >
       <!-- rawcdn.githack.com/{GitHubユーザ名}/{リポジトリ名}/{ブランチ名}/ファイルパス -->
 
-        <a-entity
+        <!-- <a-entity
           gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-          scale="5 5 5"
-          position="50 150 0"
+          scale="10 10 10"
+          position="0 0 0"
+          rotation="-90 0 0"
+        >
+        </a-entity> -->
+        <a-entity
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/cake.gltf"
+          scale="50 50 50"
+          position="50 150 -100"
         >
         </a-entity>
+        <!-- <a-entity id="entityID" scale="x y z" position="x y z" rotation="x y z"></a-entity> -->
       </a-nft>
       <a-entity camera></a-entity>
     </a-scene>
