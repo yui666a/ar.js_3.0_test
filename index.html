@@ -37,7 +37,7 @@
       vr-mode-ui="enabled: false;"
       renderer="logarithmicDepthBuffer: true;"
       embedded
-      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+      arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
     >
       <!-- we use cors proxy to avoid cross-origin problems -->
       <!-- <a-nft
@@ -47,7 +47,17 @@
         smoothCount="10"
         smoothTolerance=".01"
         smoothThreshold="5"
-      > -->
+      >
+        <div>出力中</div>
+        <a-entity
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+          scale="10 10 10"
+          position="0 0 0"
+          rotation="-90 0 0"
+        >
+        </a-entity>
+      </a-nft> -->
+
       <a-nft
         type="nft"
         url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/aiso"
@@ -56,19 +66,11 @@
         smoothTolerance=".01"
         smoothThreshold="5"
       >
-      <!-- rawcdn.githack.com/{GitHubユーザ名}/{リポジトリ名}/{ブランチ名}/ファイルパス -->
-
-        <!-- <a-entity
-          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-          scale="10 10 10"
-          position="0 0 0"
-          rotation="-90 0 0"
-        >
-        </a-entity> -->
         <a-entity
-          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/cake.gltf"
+          gltf-model='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yuki-sakaguchi/web-ar/master/public/image-tracking/assets/model/cake.gltf'
           scale="50 50 50"
-          position="50 150 -100"
+          position="50 50 -100"
+          rotation="0 0 0"
         >
         </a-entity>
         <!-- <a-entity id="entityID" scale="x y z" position="x y z" rotation="x y z"></a-entity> -->
