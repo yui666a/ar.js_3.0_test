@@ -8,6 +8,24 @@
     <title>untitled</title>
   </head>
   <body>
+    <script>
+    document.getElementById("request_permission").addEventListener("click", function(){
+      if (
+      DeviceMotionEvent &&
+      DeviceMotionEvent.requestPermission &&
+      typeof DeviceMotionEvent.requestPermission === 'function'
+      ) {
+      DeviceMotionEvent.requestPermission();
+      }
+      if (
+      DeviceOrientationEvent &&
+      DeviceOrientationEvent.requestPermission &&
+      typeof DeviceOrientationEvent.requestPermission === 'function'
+      ) {
+      DeviceOrientationEvent.requestPermission();
+      }
+      })
+    </script>
     <a-scene>
       <a-box position="5 0 -7" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
