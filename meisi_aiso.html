@@ -17,6 +17,11 @@
       <div>読み込み中です，少々お待ちください．この表示が消えたらカメラで写真を映してください</div>
     </div>
 
+    <a-assets>
+      <!-- <a-asset-item id="vroid" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/v1.glb"></a-asset-item> -->
+      <a-asset-item id="vroid" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/v1_2/v1_2.gltf"></a-asset-item>
+    </a-assets>
+
 
     <a-scene
       vr-mode-ui="enabled: false;"
@@ -34,7 +39,7 @@
 
         <a-entity position="0 -100 -300" scale="1 1 1" rotation="0 0 0">
           <a-entity
-          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/v1_2/v1_2.gltf"
+          gltf-model="#vroid"
           position="0 0 0"
           rotation="0 180 0"
           scale="100 100 100"
