@@ -33,19 +33,19 @@
         smoothTolerance=".01"
         smoothThreshold="5">
 
-        <a-entity position="0 0 -300" scale="100 100 100">
+        <!-- <a-entity position="0 0 -300" scale="100 100 100"> -->
           <a-entity
           gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/v1_2/v1_2.gltf"
-          position="0 -100 0"
+          position="0 -100 -300"
           rotation="0 180 0"
-          scale="1 1 1"
+          scale="100 100 100"
           ></a-entity>
 
-          <a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"> 
-            <a-sphere position="300 0 0" scale="2 2 2" color="mediumseagreen"> </a-sphere> 
-            <a-text align="center" value="AISO\nHitoshi"  color="red" position="0 200 0" scale="2 2 2" rotation="315 0 0" side="double"></a-text>
+          <a-entity position="0 0 -300" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"> 
+            <a-sphere position="300 0 0" scale="200 200 200" color="mediumseagreen"> </a-sphere> 
+            <a-text align="center" value="AISO\nHitoshi"  color="red" position="300 200 0" scale="200 200 200" rotation="315 0 0" side="double"></a-text>
           </a-entity>
-        </a-entity>
+        <!-- </a-entity> -->
       </a-nft>
       <a-entity camera></a-entity>
     </a-scene>
