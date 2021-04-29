@@ -19,6 +19,7 @@
 
     <a-assets>
       <!-- <a-asset-item id="vroid" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/v1.glb"></a-asset-item> -->
+      <a-asset-item id="vroid_glb" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/v1.glb"></a-asset-item>
       <a-asset-item id="vroid" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/v1_2/v1_2.gltf"></a-asset-item>
     </a-assets>
 
@@ -38,12 +39,8 @@
         smoothThreshold="5">
 
         <a-entity position="0 -100 -300" scale="1 1 1" rotation="0 0 0">
-          <a-entity
-          gltf-model="#vroid"
-          position="0 0 0"
-          rotation="0 180 0"
-          scale="100 100 100"
-          ></a-entity>
+          <!-- vroid_glb -->
+          <a-entity gltf-model="#vroid_glb" position="0 0 0" rotation="0 180 0" scale="100 100 100"></a-entity>
 
           <a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"> 
             <a-text align="center" value="AISO\nHitoshi"                      color="red"   position="0 100 200"  scale="150 150 150" rotation="315 0 0"></a-text><!-- side="double" -->
