@@ -67,22 +67,22 @@
   </body>
 
   <script>
-    // $(".request_permission").on("click", function () {
-    //   if (
-    //     DeviceMotionEvent &&
-    //     DeviceMotionEvent.requestPermission &&
-    //     typeof DeviceMotionEvent.requestPermission === "function"
-    //   ) {
-    //     DeviceMotionEvent.requestPermission();
-    //   }
-    //   if (
-    //     DeviceOrientationEvent &&
-    //     DeviceOrientationEvent.requestPermission &&
-    //     typeof DeviceOrientationEvent.requestPermission === "function"
-    //   ) {
-    //     DeviceOrientationEvent.requestPermission();
-    //   }
-    // });
+    $(".request_permission").on("click", function () {
+      if (
+        DeviceMotionEvent &&
+        DeviceMotionEvent.requestPermission &&
+        typeof DeviceMotionEvent.requestPermission === "function"
+      ) {
+        DeviceMotionEvent.requestPermission();
+      }
+      if (
+        DeviceOrientationEvent &&
+        DeviceOrientationEvent.requestPermission &&
+        typeof DeviceOrientationEvent.requestPermission === "function"
+      ) {
+        DeviceOrientationEvent.requestPermission();
+      }
+    });
     var targetEl = document.querySelector("#target");
     targetEl.addEventListener("click", function () {
       targetEl.setAttribute("material", { color: "red" });
