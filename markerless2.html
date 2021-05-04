@@ -10,13 +10,13 @@
   <body>
     <a-scene>
       <a-box position="5 0 -7" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder
         position="1 0.75 -3"
         radius="0.5"
         height="1.5"
         color="#FFC65D"
-      ></a-cylinder>
+      ></a-cylinder> -->
       <a-box
         id="target"
         material="color: green"
@@ -26,13 +26,13 @@
 
       <!-- Camera + Cursor -->
       <!-- <a-entity camera> -->
-      <!-- <a-entity
-            cursor="fuse: true; fuseTimeout: 500"
-            position="0 0 -1"
-            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-            material="color: black; shader: flat"
-          >
-          </a-entity> -->
+      <a-entity
+        cursor="fuse: true; fuseTimeout: 500"
+        position="0 0 -1"
+        geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+        material="color: black; shader: flat"
+      >
+      </a-entity>
       <!-- </a-entity> -->
     </a-scene>
   </body>
