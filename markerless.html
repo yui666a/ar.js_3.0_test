@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <div class="main">
-      <!-- <a-scene>
+    <!-- <a-scene>
       <a-entity
         gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/v1_2/v1_2.gltf"
         position="0 -3 -7"
@@ -22,67 +21,66 @@
       >
       </a-entity> -->
 
-      <!-- <a-box position="5 0 -7" rotation="0 45 0" color="#4CC3D9"></a-box> -->
-      <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+    <!-- <a-box position="5 0 -7" rotation="0 45 0" color="#4CC3D9"></a-box> -->
+    <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
-      <!-- </a-scene> -->
+    <!-- </a-scene> -->
 
-      <a-scene>
-        <!-- Target -->
-        <a-box
-          id="target"
-          material="color: green"
-          position="2 0 -7"
-          rotation="0 0 0"
-        ></a-box>
-        <a-entity
-          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/v1_2/v1_2.gltf"
-          position="1 0 -7"
-          rotation="0 180 0"
-          scale="2 2 2"
-        >
-        </a-entity>
+    <a-scene>
+      <!-- Target -->
+      <a-box
+        id="target"
+        material="color: green"
+        position="2 0 -7"
+        rotation="0 0 0"
+      ></a-box>
+      <a-entity
+        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/v1_2/v1_2.gltf"
+        position="1 0 -7"
+        rotation="0 180 0"
+        scale="2 2 2"
+      >
+      </a-entity>
 
-        <a-box position="0 0 -6" rotation="0 45 0" color="#4CC3D9"></a-box>
-        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-        <a-cylinder
-          position="1 0.75 -3"
-          radius="0.5"
-          height="1.5"
-          color="#FFC65D"
-        ></a-cylinder>
+      <a-box position="0 0 -6" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder
+        position="1 0.75 -3"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+      ></a-cylinder>
 
-        <!-- Camera + Cursor -->
-        <a-entity camera>
-          <!-- <a-entity
+      <!-- Camera + Cursor -->
+      <a-entity camera>
+        <!-- <a-entity
             cursor="fuse: true; fuseTimeout: 500"
             position="0 0 -1"
             geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
             material="color: black; shader: flat"
           >
           </a-entity> -->
-        </a-entity>
-      </a-scene>
-    </div>
+      </a-entity>
+    </a-scene>
   </body>
 
-  <script>
-    $(".request_permission").on("click", function () {
-      if (
-        DeviceMotionEvent &&
-        DeviceMotionEvent.requestPermission &&
-        typeof DeviceMotionEvent.requestPermission === "function"
-      ) {
-        DeviceMotionEvent.requestPermission();
-      }
-      if (
-        DeviceOrientationEvent &&
-        DeviceOrientationEvent.requestPermission &&
-        typeof DeviceOrientationEvent.requestPermission === "function"
-      ) {
-        DeviceOrientationEvent.requestPermission();
-      }
-    });
+  <!-- <script>
+    // $(".request_permission").on("click", function () {
+    //   if (
+    //     DeviceMotionEvent &&
+    //     DeviceMotionEvent.requestPermission &&
+    //     typeof DeviceMotionEvent.requestPermission === "function"
+    //   ) {
+    //     DeviceMotionEvent.requestPermission();
+    //   }
+    //   if (
+    //     DeviceOrientationEvent &&
+    //     DeviceOrientationEvent.requestPermission &&
+    //     typeof DeviceOrientationEvent.requestPermission === "function"
+    //   ) {
+    //     DeviceOrientationEvent.requestPermission();
+    //   }
+    // });
     ///////////////////////////////////////////////////////////
     // 色チェンジ
     ///////////////////////////////////////////////////////////
@@ -101,5 +99,5 @@
     // } else {
     //   scene.addEventListener("loaded", run);
     // }
-  </script>
+  </script> -->
 </html>
