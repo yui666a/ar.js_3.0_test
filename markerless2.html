@@ -17,17 +17,23 @@
         height="1.5"
         color="#FFC65D"
       ></a-cylinder>
+      <a-box
+        id="target"
+        material="color: green"
+        position="2 0 -7"
+        rotation="0 0 0"
+      ></a-box>
 
       <!-- Camera + Cursor -->
-      <a-entity camera>
-        <!-- <a-entity
+      <!-- <a-entity camera> -->
+      <!-- <a-entity
             cursor="fuse: true; fuseTimeout: 500"
             position="0 0 -1"
             geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
             material="color: black; shader: flat"
           >
           </a-entity> -->
-      </a-entity>
+      <!-- </a-entity> -->
     </a-scene>
   </body>
 
@@ -56,9 +62,9 @@
     ///////////////////////////////////////////////////////////
     // 色チェンジ
     ///////////////////////////////////////////////////////////
-    // var targetEl = document.querySelector("#target");
-    // targetEl.addEventListener("click", function () {
-    //   targetEl.setAttribute("material", { color: "red" });
-    // });
+    var targetEl = document.querySelector("#target");
+    targetEl.addEventListener("click", function () {
+      targetEl.setAttribute("material", { color: "red" });
+    });
   </script>
 </html>
