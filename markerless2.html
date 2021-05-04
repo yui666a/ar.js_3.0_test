@@ -16,10 +16,24 @@
         height="1.5"
         color="#FFC65D"
       ></a-cylinder>
+
+      <!-- Camera + Cursor -->
+      <a-entity camera>
+        <!-- <a-entity
+            cursor="fuse: true; fuseTimeout: 500"
+            position="0 0 -1"
+            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+            material="color: black; shader: flat"
+          >
+          </a-entity> -->
+      </a-entity>
     </a-scene>
   </body>
 
   <script>
+    ////////////////////////////////////
+    //加速度センサの情報取得の許可
+    ////////////////////////////////////
     document
       .getElementById("request_permission")
       .addEventListener("click", function () {
@@ -38,5 +52,12 @@
           DeviceOrientationEvent.requestPermission();
         }
       });
+    ///////////////////////////////////////////////////////////
+    // 色チェンジ
+    ///////////////////////////////////////////////////////////
+    // var targetEl = document.querySelector("#target");
+    // targetEl.addEventListener("click", function () {
+    //   targetEl.setAttribute("material", { color: "red" });
+    // });
   </script>
 </html>
