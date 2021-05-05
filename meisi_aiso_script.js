@@ -55,20 +55,20 @@ targetEl.addEventListener("click", function () {
     console.log("clicked");
 });
 // カーソルがぶつかったら拡大
-targetEl.addEventListener('mouseenter', function () {
-    targetEl.setAttribute('scale', {
-        x: 3,
-        y: 3,
-        z: 3
-    });
-    console.log("mouseenter");
-});
-// カーソルが離れたら元にもどす
-targetEl.addEventListener('mouseleave', function () {
-    targetEl.setAttribute('scale', {
-        x: 1,
-        y: 1,
-        z: 1
-    });
-    console.log("mouseleave");
-});
+// targetEl.addEventListener('mouseenter', function () {
+//     targetEl.setAttribute('scale', {
+//         x: 3,
+//         y: 3,
+//         z: 3
+//     });
+//     console.log("mouseenter");
+// });
+// // カーソルが離れたら元にもどす
+// targetEl.addEventListener('mouseleave', function () {
+//     targetEl.setAttribute('scale', {
+//         x: 1,
+//         y: 1,
+//         z: 1
+//     });
+//     console.log("mouseleave");
+// });
