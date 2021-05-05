@@ -5,19 +5,19 @@ var contact = document.querySelector('#contact');
 
 
 home.addEventListener('click', function () {
-    location.href = "/anharu/web-site/";
+    location.href = "/anharu/index.html";
 });
 
 about.addEventListener('click', function () {
-    location.href = "/anharu/web-site/about.html";
+    location.href = "/anharu/about.html";
 });
 
 service.addEventListener('click', function () {
-    location.href = "/anharu/web-site/service.html";
+    location.href = "/anharu/service.html";
 });
 
 contact.addEventListener('click', function () {
-    location.href = "/web-site-vr/web-site/contact.html";
+    location.href = "/anharu/contact.html";
 });
 
 
