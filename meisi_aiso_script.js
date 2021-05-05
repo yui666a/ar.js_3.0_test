@@ -24,10 +24,10 @@
 
 
 
-var home = document.querySelector('#home');
-var about = document.querySelector('#about');
+// var home = document.querySelector('#home');
+// var about = document.querySelector('#about');
 // var service = document.querySelector('#service');
-var contact = document.querySelector('#contact');
+// var contact = document.querySelector('#contact');
 
 
 // home.addEventListener('click', function () {
@@ -55,21 +55,20 @@ targetEl.addEventListener("click", function () {
     console.log("clicked");
 });
 // カーソルがぶつかったら拡大
-// targetEl.addEventListener('mouseenter', function () {
-//     targetEl.setAttribute('scale', {
-//         x: 5,
-//         y: 5,
-//         z: 5
-//     });
-//     console.log("mouseenter");
-// });
-
-// // カーソルが離れたら元にもどす
-// targetEl.addEventListener('mouseleave', function () {
-//     targetEl.setAttribute('scale', {
-//         x: 2,
-//         y: 2,
-//         z: 2
-//     });
-//     console.log("mouseleave");
-// });
+targetEl.addEventListener('mouseenter', function () {
+    targetEl.setAttribute('scale', {
+        x: 5,
+        y: 5,
+        z: 5
+    });
+    console.log("mouseenter");
+});
+// カーソルが離れたら元にもどす
+targetEl.addEventListener('mouseleave', function () {
+    targetEl.setAttribute('scale', {
+        x: 2,
+        y: 2,
+        z: 2
+    });
+    console.log("mouseleave");
+});
