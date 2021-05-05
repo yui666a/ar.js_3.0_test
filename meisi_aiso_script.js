@@ -57,18 +57,18 @@ targetEl.addEventListener("click", function () {
 // カーソルがぶつかったら拡大
 targetEl.addEventListener('mouseenter', function () {
     targetEl.setAttribute('scale', {
-        x: 5,
-        y: 5,
-        z: 5
+        x: 3,
+        y: 3,
+        z: 3
     });
     console.log("mouseenter");
 });
 // カーソルが離れたら元にもどす
 targetEl.addEventListener('mouseleave', function () {
     targetEl.setAttribute('scale', {
-        x: 2,
-        y: 2,
-        z: 2
+        x: 1,
+        y: 1,
+        z: 1
     });
     console.log("mouseleave");
 });
