@@ -7,8 +7,9 @@
       integrity="sha512-/gO16YMp20RIqCZXZyvMlzALQqEoiDU0akshw25wFiXCRGl+0p/HPWkOd8HWFn6bnatGhxakGLfYhWaPPVQIyA=="
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script> -->
     <script src="./aframe-ar-nft.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+    
 
   </head>
 
@@ -31,6 +32,11 @@
       embedded
       arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
     >
+
+      <a-entity position="0 -100 -300" scale="1 1 1" rotation="0 0 0">
+        <a-box id="target" material="color: green" position="-200 100 0"  scale="150 150 150" rotation="315 270 0"></a-box>
+      </a-entity>
+
       <a-nft
         type="nft"
         url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/marker/aiso"
@@ -62,7 +68,7 @@
           geometry="primitive: ring; radiusInner: 0.1; radiusOuter: 0.15;"
           material="color: #acacac; shader: flat; opacity: 0.8"
         >
-          <!-- <a-animation
+          <a-animation
             begin="click"
             easing="ease-in"
             attribute="scale"
@@ -79,7 +85,7 @@
             fill="backwards"
             from="1 1 1"
             to="0.1 0.1 0.1"
-          ></a-animation>-->
+          ></a-animation>
         </a-entity> 
       </a-entity>
     </a-scene>
