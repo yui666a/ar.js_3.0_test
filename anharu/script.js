@@ -26,7 +26,7 @@
 
 var home = document.querySelector('#home');
 var about = document.querySelector('#about');
-var service = document.querySelector('#service');
+// var service = document.querySelector('#service');
 var contact = document.querySelector('#contact');
 
 
@@ -40,10 +40,10 @@ about.addEventListener('click', function () {
     console.log("about clicked");
 });
 
-service.addEventListener('click', function () {
-    location.href = "/anharu/service.html";
-    console.log("service clicked");
-});
+// service.addEventListener('click', function () {
+//     location.href = "/anharu/service.html";
+//     console.log("service clicked");
+// });
 
 contact.addEventListener('click', function () {
     location.href = "/anharu/contact.html";
