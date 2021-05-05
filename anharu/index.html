@@ -9,8 +9,9 @@
       crossorigin="anonymous"
     ></script>
     <!-- <script src="../aframe-master.min.js"></script> -->
-    <script src="../aframe-ar-nft.js"></script>
-    <!-- <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script> -->
+    <!-- <script src="../aframe-ar-nft.js"></script> -->
+    <!-- <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script> -->
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
   </head>
   <body>
     <!-- <script>
@@ -37,7 +38,7 @@
         });
     </script> -->
 
-    <a-scene>
+    <a-scene cursor="rayOrigin: mouse">
       <a-box
         id="target"
         material="color: green"
@@ -80,7 +81,7 @@
       ></a-text>
 
       <a-entity camera look-controls wasd-controls>
-        <a-entity
+        <!-- <a-entity
           cursor="fuse: true;"
           position="0 0 -2"
           geometry="primitive: ring; radiusInner: 0.1; radiusOuter: 0.15;"
@@ -104,7 +105,7 @@
             from="1 1 1"
             to="0.1 0.1 0.1"
           ></a-animation>
-        </a-entity>
+        </a-entity> -->
       </a-entity>
       <!-- <a-sky color="#87ceeb"></a-sky> -->
     </a-scene>
