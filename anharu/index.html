@@ -7,6 +7,30 @@
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
   </head>
   <body>
+    <script>
+      ////////////////////////////////////
+      //加速度センサの情報取得の許可
+      ////////////////////////////////////
+      document
+        .getElementById("request_permission")
+        .addEventListener("click", function () {
+          if (
+            DeviceMotionEvent &&
+            DeviceMotionEvent.requestPermission &&
+            typeof DeviceMotionEvent.requestPermission === "function"
+          ) {
+            DeviceMotionEvent.requestPermission();
+          }
+          if (
+            DeviceOrientationEvent &&
+            DeviceOrientationEvent.requestPermission &&
+            typeof DeviceOrientationEvent.requestPermission === "function"
+          ) {
+            DeviceOrientationEvent.requestPermission();
+          }
+        });
+    </script>
+
     <a-scene>
       <a-text
         id="home"
