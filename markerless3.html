@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first VR site</title>
+    <script src="https://aframe.io/releases/0.7.0/aframe.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="0 5 -5" rotation="0 45 45" scale="2 2 2" color="#EF2D5E">
+        <a-animation
+          attribute="position"
+          to="0 -4 -5"
+          direction="alternate"
+          dur="3000"
+          repeat="indefinite"
+        ></a-animation>
+      </a-box>
+
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+    </a-scene>
+    <script type="text/javascript" src="/script.js"></script>
+  </body>
+  <script>
+    var boxEl = document.querySelector("a-box");
+
+    // カーソルがぶつかったら拡大
+    boxEl.addEventListener("mouseenter", function () {
+      boxEl.setAttribute("scale", { x: 5, y: 5, z: 5 });
+      console.log("mouseenter");
+    });
+
+    // カーソルが離れたら元にもどす
+    boxEl.addEventListener("mouseleave", function () {
+      boxEl.setAttribute("scale", { x: 2, y: 2, z: 2 });
+      console.log("mouseleave");
+    });
+  </script>
+</html>
