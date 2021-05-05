@@ -3,9 +3,56 @@
   <head>
     <meta charset="utf-8" />
     <!-- <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script> -->
-    <script src="./aframe-master.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.2.0/aframe.min.js"
+      integrity="sha512-/gO16YMp20RIqCZXZyvMlzALQqEoiDU0akshw25wFiXCRGl+0p/HPWkOd8HWFn6bnatGhxakGLfYhWaPPVQIyA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
     <title>untitled</title>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="5 0 -7" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder
+        position="1 0.75 -3"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+      ></a-cylinder> -->
+      <a-box
+        id="target"
+        cursor-listener
+        material="color: green"
+        position="2 0 -7"
+        rotation="0 0 0"
+      ></a-box>
+
+      <!-- Camera + Cursor -->
+      <a-entity camera look-controls>
+        <a-entity
+          cursor="fuse: true; fuseTimeout: 500"
+          position="0 0 -1"
+          geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+          material="color: black; shader: flat"
+        >
+        </a-entity>
+      </a-entity>
+
+      <a-entity
+        cursor-listener
+        id="box"
+        position="0 0 -1"
+        geometry="primitive: box"
+        material="color: blue"
+      ></a-entity>
+
+      <!-- <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera> -->
+    </a-scene>
+
     <script>
       ////////////////////////////////////
       //加速度センサの情報取得の許可
@@ -49,47 +96,5 @@
         },
       });
     </script>
-  </head>
-  <body>
-    <a-scene>
-      <a-box position="5 0 -7" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder
-        position="1 0.75 -3"
-        radius="0.5"
-        height="1.5"
-        color="#FFC65D"
-      ></a-cylinder> -->
-      <a-box
-        id="target"
-        cursor-listener
-        material="color: green"
-        position="2 0 -7"
-        rotation="0 0 0"
-      ></a-box>
-
-      <!-- Camera + Cursor -->
-      <a-entity camera look-controls>
-        <a-entity
-          cursor="fuse: true; fuseTimeout: 500"
-          position="0 0 -1"
-          geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-          material="color: black; shader: flat"
-        >
-        </a-entity>
-      </a-entity>
-
-      <a-entity
-        cursor-listener
-        id="box"
-        position="0 0 -1"
-        geometry="primitive: box"
-        material="color: blue"
-      ></a-entity>
-
-      <!-- <a-camera>
-        <a-cursor></a-cursor>
-      </a-camera> -->
-    </a-scene>
   </body>
 </html>
