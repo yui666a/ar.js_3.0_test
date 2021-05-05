@@ -1,26 +1,3 @@
-var home = document.querySelector('#home');
-var about = document.querySelector('#about');
-var service = document.querySelector('#service');
-var contact = document.querySelector('#contact');
-
-
-home.addEventListener('click', function () {
-    location.href = "/anharu/index.html";
-});
-
-about.addEventListener('click', function () {
-    location.href = "/anharu/about.html";
-});
-
-service.addEventListener('click', function () {
-    location.href = "/anharu/service.html";
-});
-
-contact.addEventListener('click', function () {
-    location.href = "/anharu/contact.html";
-});
-
-
 ////////////////////////////////////
 //加速度センサの情報取得の許可
 ////////////////////////////////////
@@ -42,3 +19,29 @@ document
             DeviceOrientationEvent.requestPermission();
         }
     });
+
+
+
+
+
+var home = document.querySelector('#home');
+var about = document.querySelector('#about');
+var service = document.querySelector('#service');
+var contact = document.querySelector('#contact');
+
+
+home.addEventListener('click', function () {
+    location.href = "/anharu/index.html";
+});
+
+about.addEventListener('click', function () {
+    location.href = "/anharu/about.html";
+});
+
+service.addEventListener('click', function () {
+    location.href = "/anharu/service.html";
+});
+
+contact.addEventListener('click', function () {
+    location.href = "/anharu/contact.html";
+});
