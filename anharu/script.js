@@ -45,3 +45,10 @@ service.addEventListener('click', function () {
 contact.addEventListener('click', function () {
     location.href = "/anharu/contact.html";
 });
+
+var targetEl = document.querySelector("#target");
+targetEl.addEventListener("click", function () {
+    targetEl.setAttribute("material", {
+        color: "red"
+    });
+});
