@@ -5,6 +5,21 @@
     <script src="https://aframe.io/releases/0.7.0/aframe.js"></script>
   </head>
   <body>
+    <script>
+      var boxEl = document.querySelector("a-box");
+
+      // カーソルがぶつかったら拡大
+      boxEl.addEventListener("mouseenter", function () {
+        boxEl.setAttribute("scale", { x: 5, y: 5, z: 5 });
+        console.log("mouseenter");
+      });
+
+      // カーソルが離れたら元にもどす
+      boxEl.addEventListener("mouseleave", function () {
+        boxEl.setAttribute("scale", { x: 2, y: 2, z: 2 });
+        console.log("mouseleave");
+      });
+    </script>
     <a-scene>
       <a-box position="0 5 -5" rotation="0 45 45" scale="2 2 2" color="#EF2D5E">
         <a-animation
@@ -22,19 +37,4 @@
     </a-scene>
     <script type="text/javascript" src="/script.js"></script>
   </body>
-  <script>
-    var boxEl = document.querySelector("a-box");
-
-    // カーソルがぶつかったら拡大
-    boxEl.addEventListener("mouseenter", function () {
-      boxEl.setAttribute("scale", { x: 5, y: 5, z: 5 });
-      console.log("mouseenter");
-    });
-
-    // カーソルが離れたら元にもどす
-    boxEl.addEventListener("mouseleave", function () {
-      boxEl.setAttribute("scale", { x: 2, y: 2, z: 2 });
-      console.log("mouseleave");
-    });
-  </script>
 </html>
