@@ -47,13 +47,13 @@
 //     console.log("contact clicked");
 // });
 
-// var targetEl = document.querySelector("#target");
-// targetEl.addEventListener("click", function () {
-//     targetEl.setAttribute("material", {
-//         color: "red"
-//     });
-//     console.log("clicked");
-// });
+var targetEl = document.querySelector("#target");
+targetEl.addEventListener("click", function () {
+    targetEl.setAttribute("material", {
+        color: "red"
+    });
+    console.log("clicked");
+});
 
 AFRAME.registerComponent("cursor-listener", {
     init: function () {
