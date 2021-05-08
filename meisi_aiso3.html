@@ -54,11 +54,11 @@
             <a-text cursor-listener align="center" value="AISO\nHitoshi"                      color="red"   position="0 0 200"  scale="150 150 150" rotation="315 0 0"></a-text><!-- side="double" -->
             <a-text cursor-listener align="center" value="Nagaoka University\nof Technology"  color="blue"  position="0 0 -200" scale="150 150 150" rotation="315 180 0"></a-text>
             <a-text cursor-listener align="center" value="XR, Front\npython, java, C#"        color="green" position="200 0 0"  scale="150 150 150" rotation="315 90 0"></a-text>
-            <a-box  cursor-listener id="target" class="clickable" material="color: green"                   position="-200 0 0" scale="150 150 150" rotation="315 270 0"></a-box>
+            <a-box  cursor-listener id="target"    class="clickable" material="color: green"                   position="-200 0 0" scale="150 150 150" rotation="315 270 0"></a-box>
           <!-- </a-entity> -->
         </a-entity>
       </a-nft>
-      <a-entity camera raycaster="objects: .clickable"></a-entity>
+      <a-entity camera raycaster="objects: #target"></a-entity>
     </a-scene>
     <script src="./meisi_aiso_script.js"></script>
   </body>

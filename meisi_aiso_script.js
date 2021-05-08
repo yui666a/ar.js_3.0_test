@@ -47,26 +47,25 @@
 //     console.log("contact clicked");
 // });
 
-// var targetEl = document.querySelector("#target");
-// targetEl.addEventListener("click", function () {
-//     targetEl.setAttribute("material", {
-//         color: "red"
-//     });
-//     console.log("clicked");
-
-// });
-
-AFRAME.registerComponent("cursor-listener", {
-    init: function () {
-        var lastIndex = -1;
-        var COLORS = ["red", "green", "blue"];
-        this.el.addEventListener("click", function (evt) {
-            lastIndex = (lastIndex + 1) % COLORS.length;
-            this.setAttribute("material", "color", COLORS[lastIndex]);
-            console.log("I was clicked at: ", evt.detail.intersection.point);
-        });
-    },
+var targetEl = document.querySelector("#target");
+targetEl.addEventListener("click", function () {
+    targetEl.setAttribute("material", {
+        color: "red"
+    });
+    console.log("clicked");
 });
+
+// AFRAME.registerComponent("cursor-listener", {
+//     init: function () {
+//         var lastIndex = -1;
+//         var COLORS = ["red", "green", "blue"];
+//         this.el.addEventListener("click", function (evt) {
+//             lastIndex = (lastIndex + 1) % COLORS.length;
+//             this.setAttribute("material", "color", COLORS[lastIndex]);
+//             console.log("I was clicked at: ", evt.detail.intersection.point);
+//         });
+//     },
+// });
 
 // カーソルがぶつかったら拡大
 // targetEl.addEventListener('mouseenter', function () {
