@@ -46,22 +46,14 @@ twitter.addEventListener('click', function () {
 //     location.href = "/anharu/about.html";
 //     console.log("about clicked");
 // });
-// // service.addEventListener('click', function () {
-// //     location.href = "/anharu/service.html";
-// //     console.log("service clicked");
-// // });
-// contact.addEventListener('click', function () {
-//     location.href = "/anharu/contact.html";
-//     console.log("contact clicked");
-// });
 
-var targetEl = document.querySelector("#target");
-targetEl.addEventListener("click", function () {
-    targetEl.setAttribute("material", {
-        color: "red"
-    });
-    console.log("clicked");
-});
+// var targetEl = document.querySelector("#target");
+// targetEl.addEventListener("click", function () {
+//     targetEl.setAttribute("material", {
+//         color: "red"
+//     });
+//     console.log("clicked");
+// });
 
 // AFRAME.registerComponent("cursor-listener", {
 //     init: function () {
