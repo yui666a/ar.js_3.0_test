@@ -24,16 +24,24 @@
 
 
 
-// var home = document.querySelector('#home');
-// var about = document.querySelector('#about');
-// var service = document.querySelector('#service');
+var instagram = document.querySelector('#instagram');
+var facebook = document.querySelector('#facebook');
+var twitter = document.querySelector('#twitter');
 // var contact = document.querySelector('#contact');
 
 
-// home.addEventListener('click', function () {
-//     location.href = "/anharu/index.html";
-//     console.log("home clicked");
-// });
+instagram.addEventListener('click', function () {
+    location.href = "https://www.instagram.com/yui.ai/";
+    console.log("instagram visit \"https://www.instagram.com/yui.ai/\"");
+});
+facebook.addEventListener('click', function () {
+    location.href = "https://www.facebook.com/hitoshi.aiso/";
+    console.log("facebook visit \"https://www.facebook.com/hitoshi.aiso/\"");
+});
+twitter.addEventListener('click', function () {
+    location.href = "https://twitter.com/yui_ai666";
+    console.log("twitter visit \"https://twitter.com/yui_ai666\"");
+});
 // about.addEventListener('click', function () {
 //     location.href = "/anharu/about.html";
 //     console.log("about clicked");
