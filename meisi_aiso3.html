@@ -33,7 +33,7 @@
         <!-- <a-asset-item id="vroid" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/v1_2/v1_2.gltf"></a-asset-item>
         <a-asset-item id="vita" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/Vita/Vita.gltf"></a-asset-item> -->
       <!-- </a-assets> -->
-      <a-box id="target" material="color: green" position="0 0 -10" scale="1 1 1" rotation="0 0 0"></a-box>
+      <a-box id="target" material="color: green" position="3 0 -10" scale="1 1 1" rotation="0 0 0"></a-box>
 
       <a-nft
         type="nft"
@@ -43,20 +43,20 @@
         smoothTolerance=".01"
         smoothThreshold="5">
 
-        <a-entity position="0 0 -300" scale="1 1 1" rotation="0 0 0">
+        <!-- <a-entity position="0 0 -300" scale="1 1 1" rotation="0 0 0"> -->
           <!-- #vroid -->
           <!-- <a-entity gltf-model="#vroid_glb" position="0 0 0" rotation="0 180 0" scale="100 100 100"></a-entity> -->
           <!-- <a-entity gltf-model="#vita" position="0 0 0" rotation="0 180 0" scale="100 100 100"></a-entity> -->
 
           <!-- <a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 15000">  -->
-            <a-text  align="center" value="AISO\nHitoshi"                      color="red"   position="0 0 200"  scale="150 150 150" rotation="315 0 0"></a-text><!-- side="double" -->
-            <a-text  align="center" value="Nagaoka University\nof Technology"  color="blue"  position="0 0 -200" scale="150 150 150" rotation="315 180 0"></a-text>
-            <a-text  align="center" value="XR, Front\npython, java, C#"        color="green" position="200 0 0"  scale="150 150 150" rotation="315 90 0"></a-text>
-            <a-box  cursor-listener id="target"    class="clickable" material="color: green"                   position="-200 0 0" scale="150 150 150" rotation="315 270 0"></a-box>
+            <a-text  align="center" value="AISO\nHitoshi"                      color="red"   position="0 0 -100"  scale="150 150 150" rotation="315 0 0"></a-text><!-- side="double" -->
+            <a-text  align="center" value="Nagaoka University\nof Technology"  color="blue"  position="0 0 -500" scale="150 150 150" rotation="315 180 0"></a-text>
+            <a-text  align="center" value="XR, Front\npython, java, C#"        color="green" position="200 0 -300"  scale="150 150 150" rotation="315 90 0"></a-text>
+            <a-box  cursor-listener id="target"    class="clickable" material="color: green" position="-200 0 -300" scale="150 150 150" rotation="315 270 0"></a-box>
           <!-- </a-entity> -->
-        </a-entity>
+        <!-- </a-entity> -->
       </a-nft>
-      <a-entity camera raycaster="objects: #target, .clickable; far:1000;"></a-entity>
+      <a-entity camera cursor-listener raycaster="objects: #target, .clickable; far:1000;"></a-entity>
     </a-scene>
     <script src="./meisi_aiso_script.js"></script>
   </body>
