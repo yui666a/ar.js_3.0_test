@@ -22,11 +22,13 @@
     </div>
 
     <a-scene
+      cursor="rayOrigin: mouse"
+    >
+    <!-- 
       vr-mode-ui="enabled: false;"
       renderer="logarithmicDepthBuffer: true;"
       arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
-      cursor="rayOrigin: mouse"
-    >
+     -->
       <!-- <a-assets> -->
         <!-- <a-asset-item id="vroid_glb" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/v1.glb"></a-asset-item> -->
         <!-- <a-asset-item id="vroid" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/v1_2/v1_2.gltf"></a-asset-item>
@@ -55,7 +57,8 @@
           <!-- </a-entity> -->
         <!-- </a-entity> -->
       </a-nft>
-      <a-entity camera cursor-listener raycaster="objects: #target; far:1000;"></a-entity>
+      <a-entity camera></a-entity>
+      <!-- <a-entity camera cursor-listener raycaster="objects: #target; far:1000;"></a-entity> -->
     </a-scene>
     <script src="./meisi_aiso_script.js"></script>
   </body>
