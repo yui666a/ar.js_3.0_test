@@ -25,6 +25,7 @@
       renderer="logarithmicDepthBuffer: true;"
       arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
       cursor="rayOrigin: mouse"
+      embedded
     ><!-- embedded を削除中 -->
 
       <!-- <a-assets> -->
@@ -43,6 +44,7 @@
         smoothCount="10"
         smoothTolerance=".01"
         smoothThreshold="5">
+          <a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 15000">  -->
           <a-box
             id="target"
             material="color: green"
@@ -63,7 +65,7 @@
             <!-- <a-text align="center" value="Nagaoka University\nof Technology"  color="blue"  position="0 -1 -2" scale="1 1 1" rotation="315 180 0"></a-text> -->
             <!-- <a-text align="center" value="XR, Front\npython, java, C#"        color="green" position="2 -1 0"  scale="1 1 1" rotation="315 90 0"></a-text> -->
             <!-- <a-box id="target" class="clickable" material="color: green"                    position="-2 -1 0" scale="1 1 1" rotation="315 270 0"></a-box> -->
-          <!-- </a-entity> -->
+          </a-entity>
         <!-- </a-entity> -->
       <!-- </a-nft> -->
 
