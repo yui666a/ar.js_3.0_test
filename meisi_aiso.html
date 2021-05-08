@@ -20,14 +20,11 @@
       <div>読み込み中です，少々お待ちください．この表示が消えたらカメラで写真を映してください</div>
     </div>
 
-    
-
     <a-scene
       vr-mode-ui="enabled: false;"
       renderer="logarithmicDepthBuffer: true;"
       arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
       cursor="rayOrigin: mouse"
-      
     ><!-- embedded を削除中 -->
 
       <!-- <a-assets> -->
@@ -36,7 +33,7 @@
         <a-asset-item id="vita" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yui666a/ar.js_3.0_test/main/obj/Vita/Vita.gltf"></a-asset-item> -->
       <!-- </a-assets> -->
 
-      <a-box mogura id="target" class="clickable" material="color: green" position="0 0 -4"  scale="100 100 100" rotation="0 0 0"></a-box>
+      <!-- <a-box mogura id="target" class="clickable" material="color: green" position="0 0 -4"  scale="100 100 100" rotation="0 0 0"></a-box> -->
 
 
       <a-nft
@@ -46,8 +43,16 @@
         smoothCount="10"
         smoothTolerance=".01"
         smoothThreshold="5">
-          <a-box  mogura id="target" class="clickable" material="color: green" position="0 0 -10" scale="4 4 4" rotation="0 0 0" ></a-box>
-          <a-text mogura id="target" class="clickable" material="color: blue"　value="text" align="center" position="0 0 -15" scale="3 3 3" color="white" geometry="primitive:plane; width: 2"></a-text>
+          <a-box
+            id="target"
+            material="color: green"
+            position="0 0 -4"
+            scale="1 1 1"
+            rotation="0 0 0"
+          ></a-box>
+          <!-- <a-box  mogura id="target" class="clickable" material="color: green" position="0 0 -10" scale="4 4 4" rotation="0 0 0" ></a-box> -->
+          <!-- <a-text mogura id="target" class="clickable" material="color: blue"　value="text" align="center" position="0 0 -15" scale="3 3 3" color="white" geometry="primitive:plane; width: 2"></a-text> -->
+
         <!-- <a-entity position="0 -100 -300" scale="1 1 1" rotation="0 0 0">  -->
         <!-- <a-entity position="0 0 0" scale="150 150 150" rotation="0 0 0">  -->
           <!-- #vroid -->
@@ -63,7 +68,8 @@
       <!-- </a-nft> -->
 
 
-      <a-entity camera look-controls wasd-controls raycaster="objects: .clickable"></a-entity>
+      <a-entity camera look-controls wasd-controls></a-entity>
+      <!-- <a-entity camera look-controls wasd-controls raycaster="objects: .clickable"></a-entity> -->
     </a-scene>
     <script src="./meisi_aiso_script.js"></script>
   </body>
