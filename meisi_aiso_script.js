@@ -1,26 +1,4 @@
 ////////////////////////////////////
-//加速度センサの情報取得の許可
-////////////////////////////////////
-// document
-//     .getElementById("request_permission")
-//     .addEventListener("click", function () {
-//         if (
-//             DeviceMotionEvent &&
-//             DeviceMotionEvent.requestPermission &&
-//             typeof DeviceMotionEvent.requestPermission === "function"
-//         ) {
-//             DeviceMotionEvent.requestPermission();
-//         }
-//         if (
-//             DeviceOrientationEvent &&
-//             DeviceOrientationEvent.requestPermission &&
-//             typeof DeviceOrientationEvent.requestPermission === "function"
-//         ) {
-//             DeviceOrientationEvent.requestPermission();
-//         }
-//     });
-
-////////////////////////////////////
 // 焦点を合わせるとSNSへ移動
 ////////////////////////////////////
 var instagram = document.querySelector('#instagram');
@@ -66,3 +44,25 @@ twitter.addEventListener('click', function () {
 //         }, false);
 //     }
 // });
+
+////////////////////////////////////
+//加速度センサの情報取得の許可
+////////////////////////////////////
+document
+    .getElementById("request_permission")
+    .addEventListener("click", function () {
+        if (
+            DeviceMotionEvent &&
+            DeviceMotionEvent.requestPermission &&
+            typeof DeviceMotionEvent.requestPermission === "function"
+        ) {
+            DeviceMotionEvent.requestPermission();
+        }
+        if (
+            DeviceOrientationEvent &&
+            DeviceOrientationEvent.requestPermission &&
+            typeof DeviceOrientationEvent.requestPermission === "function"
+        ) {
+            DeviceOrientationEvent.requestPermission();
+        }
+    });
